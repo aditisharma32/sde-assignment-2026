@@ -1,6 +1,6 @@
 # Outcome-First Agent Loop — Submission
 
-**Name:** Candidate Senior Engineer · **Date:** November 2026 · **Hours actually spent (be honest):** 14 hours · **Language / storage:** Python 3 / SQLite WAL (Embedded)
+**Name:** Aditi Sharma · **Date:** November 2026 · **Hours actually spent (be honest):** 14 hours · **Language / storage:** Python 3 / SQLite WAL (Embedded)
 
 ---
 

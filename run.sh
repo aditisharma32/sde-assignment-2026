@@ -8,8 +8,12 @@ shift || true
 
 # Find appropriate python binary
 PYTHON="python3"
-if [ -f ".venv/bin/python" ]; then
+if [ -n "${VIRTUAL_ENV:-}" ] && [ -x "${VIRTUAL_ENV}/bin/python" ]; then
+    PYTHON="${VIRTUAL_ENV}/bin/python"
+elif [ -f ".venv/bin/python" ]; then
     PYTHON=".venv/bin/python"
+elif [ -f "venv/bin/python" ]; then
+    PYTHON="venv/bin/python"
 elif command -v python3 >/dev/null 2>&1; then
     PYTHON="python3"
 elif command -v python >/dev/null 2>&1; then
